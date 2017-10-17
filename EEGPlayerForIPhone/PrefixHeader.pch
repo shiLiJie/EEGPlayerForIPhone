@@ -1,0 +1,110 @@
+//
+//  PrefixHeader.pch
+//  EEGPlayerForIPhone
+//
+//  Created by 凤凰八音 on 16/6/29.
+//  Copyright © 2016年 fenghuangbayin. All rights reserved.
+//
+
+#import "UIColor+Extend.h"
+#import "HttpRequest.h"
+#import "BYHttpRequest.h"
+#import "NSString+md5Token.h"
+#import "UserObj.h"
+#import "UserTool.h"
+#import "MBProgressHUD+YCL.h"
+#import "SLJJudgementString.h"
+#import "NSString+Base64.h"
+#import "UserTool.h"
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+
+
+
+#pragma mark -APP
+
+#pragma mark - 屏幕尺寸
+#define kScreen_Width    ([UIScreen mainScreen].bounds.size.width)
+#define kScreen_Height   ([UIScreen mainScreen].bounds.size.height)
+#define kScreen_Frame    (CGRectMake(0, 0, kScreen_Width, kScreen_Height))
+#define KscreenAllFrame  ([UIScreen mainScreen].bounds)
+#define kScreen_CenterX  kScreen_Width/2
+#define kScreen_CenterY  kScreen_Height/2
+
+
+#define HomeDirectoryDocumentFilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)/*这是获取沙盒目录*/ objectAtIndex:0]
+#define kDocument               [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+#define kDocuments               [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+#pragma mark - 颜色
+#define RGB(r, g, b)     [UIColor colorWithRed:((r)/255.0) green:((g)/255.0) blue:((b)/255.0)     alpha:1.0]
+#define RGBAlpha(r, g, b, a) [UIColor colorWithRed:((r)/255.0) green:((g)/255.0) blue:((b)/255.0) alpha:(a)]
+
+#define BIG_DATA_HEAD   @"aaaa2002"
+#define SAMILL_DATA_HEAD   @"aaaa0480"
+#define KEY_FENGE_  @"a111111111111111111111111111111b"
+
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+
+
+#define ksureconnect            @"确认链接吗?"
+#define ksure                   @"确认"
+#define kcancel                 @"取消"
+#define kurl                    @"http://www.musiccare.cn"
+#define Dian                    @"点"
+#define Cell0                   @"Level0_Cell"
+#define Cell1                   @"Level1_Cell"
+#define Cell2                   @"Level2_Cell"
+#define ChangeShoudong          @"请先切换到手动模式"
+#define JianchaFile             @"检查您的文件的名字"
+#define KWeek                   @"1",@"2",@"3",@"4",@"5",@"6"
+
+
+#pragma mark ----- cell -----
+#define KCellMusicCell          @"MusicCell"
+#define KCellDeviceCell         @"DeviceCell"
+#define KCellTextCell           @"TextCell"
+#define KCellZhiliaoCell        @"zhiliaocell"
+#define KCellSearchCell         @"SearchCell"
+
+
+#define initDict                @"aaaa": @"0",@"bbbb": @"0",@"cccc" : @"0",@"dddd": @"0",@"eeee" : @"0",@"ffff": @"0",@"gggg" : @"0",@"hhhh": @"0"
+#define BlueStart               @"1001AA03A502010D0A"
+#define BlueStop                @"1001AA03A402000D0A"
+
+#define kBlueClear              @"1001AA02AB020D0A"
+#define kBlueStop               @"1001AA03A402000D0A"
+#define kBlueStar               @"1001AA03A502010D0A"
+#define OLDBANBEN               @"1001aa11aa"
+#define NEWBANBEN               @"1001aa0eaa"
+#define NEWONEBANBEN            @"1001aa09aa"
+#define KBanben                 @"1001AA01A90D0A"
+
+#pragma mark ---- netCode ----
+#define FailureCoder            @"0"
+#define SucceedCoder            @"1"
+
+
+#pragma mark ---- notifi ----
+#define SUCCESSREGISTCHANGEROOT @"SUCCESSREGISTCHANGEROOT"

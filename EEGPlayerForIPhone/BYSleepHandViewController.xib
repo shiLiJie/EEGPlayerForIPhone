@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BYSleepHandViewController">
+            <connections>
+                <outlet property="downLoadBtn" destination="Omk-GJ-CxP" id="mrD-Jo-HmK"/>
+                <outlet property="favouriteBtn" destination="H0W-Zq-5w2" id="dIU-FN-U5I"/>
+                <outlet property="fourBtnSpace" destination="m1b-yX-Np5" id="VJ2-Em-Q0a"/>
+                <outlet property="fourBtnSpacethr" destination="YBV-yM-UfV" id="5EJ-mz-N4U"/>
+                <outlet property="fourBtnSpacetwo" destination="shm-Qe-fqb" id="q8k-jL-0LS"/>
+                <outlet property="imageView" destination="2bH-My-PbN" id="GP6-yr-8fd"/>
+                <outlet property="musicListBtn" destination="H0W-Zq-5w2" id="sTY-z7-NmX"/>
+                <outlet property="musicNameLab" destination="XNT-K0-im9" id="t5X-j0-cXp"/>
+                <outlet property="nextMusicBtn" destination="9aW-NC-op7" id="fcF-Ad-FQS"/>
+                <outlet property="playOrStopBtn" destination="ULR-ni-gA5" id="rdO-rl-Ebm"/>
+                <outlet property="shareBtn" destination="Oma-d0-MCW" id="dLd-hu-j8Y"/>
+                <outlet property="upMusicBtn" destination="aUd-yr-XkS" id="pch-8S-SPz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhuanshuyinyuebg" translatesAutoresizingMaskIntoConstraints="NO" id="2bH-My-PbN">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0W-Zq-5w2">
+                    <rect key="frame" x="447" y="435" width="27" height="27"/>
+                    <state key="normal" image="yinyuelibiaoicon"/>
+                    <connections>
+                        <action selector="openMusicList:" destination="-1" eventType="touchUpInside" id="Nak-O1-EQS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oma-d0-MCW">
+                    <rect key="frame" x="387" y="435" width="27" height="27"/>
+                    <state key="normal" image="fenxiangicon"/>
+                    <connections>
+                        <action selector="shareMusic:" destination="-1" eventType="touchUpInside" id="vNl-Ng-V9G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULR-ni-gA5">
+                    <rect key="frame" x="270" y="492" width="60" height="60"/>
+                    <state key="normal" image="bofangicon"/>
+                    <connections>
+                        <action selector="starOrStopMusic:" destination="-1" eventType="touchUpInside" id="aFa-3h-yat"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUd-yr-XkS">
+                    <rect key="frame" x="185" y="504" width="35" height="35"/>
+                    <state key="normal" image="shangyishouicon"/>
+                    <connections>
+                        <action selector="upOneMusic:" destination="-1" eventType="touchUpInside" id="lHM-kL-iFh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aW-NC-op7">
+                    <rect key="frame" x="380" y="505" width="35" height="35"/>
+                    <state key="normal" image="xiayishouicon"/>
+                    <connections>
+                        <action selector="nextOneMusic:" destination="-1" eventType="touchUpInside" id="yji-sH-nvJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omk-GJ-CxP">
+                    <rect key="frame" x="267" y="435" width="27" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Omk-GJ-CxP" secondAttribute="height" multiplier="1:1" id="LgQ-YT-aNu"/>
+                    </constraints>
+                    <state key="normal" image="xiazaiicon"/>
+                    <connections>
+                        <action selector="downLoadMusic:" destination="-1" eventType="touchUpInside" id="jnW-fr-LSo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvy-q0-Pwg">
+                    <rect key="frame" x="327" y="435" width="27" height="27"/>
+                    <state key="normal" image="xihuanicon"/>
+                    <connections>
+                        <action selector="favouriteMusic:" destination="-1" eventType="touchUpInside" id="z7e-Br-rtG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNT-K0-im9">
+                    <rect key="frame" x="270" y="385" width="330" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="H0W-Zq-5w2" firstAttribute="centerY" secondItem="Oma-d0-MCW" secondAttribute="centerY" id="5e8-o4-sCy"/>
+                <constraint firstItem="dvy-q0-Pwg" firstAttribute="width" secondItem="Omk-GJ-CxP" secondAttribute="width" id="5pl-Cb-Jxl"/>
+                <constraint firstAttribute="bottom" secondItem="ULR-ni-gA5" secondAttribute="bottom" multiplier="1.05" priority="750" constant="20" symbolic="YES" id="8dk-MF-zE9"/>
+                <constraint firstItem="ULR-ni-gA5" firstAttribute="top" secondItem="Omk-GJ-CxP" secondAttribute="bottom" constant="30" id="9uF-iP-sfI"/>
+                <constraint firstItem="aUd-yr-XkS" firstAttribute="centerY" secondItem="ULR-ni-gA5" secondAttribute="centerY" id="ASs-A4-abW"/>
+                <constraint firstItem="Oma-d0-MCW" firstAttribute="centerY" secondItem="dvy-q0-Pwg" secondAttribute="centerY" id="BcH-48-iaV"/>
+                <constraint firstItem="Oma-d0-MCW" firstAttribute="width" secondItem="dvy-q0-Pwg" secondAttribute="width" id="DZu-Lf-rPN"/>
+                <constraint firstItem="ULR-ni-gA5" firstAttribute="centerX" secondItem="2bH-My-PbN" secondAttribute="centerX" id="KlZ-h0-kQH"/>
+                <constraint firstItem="Oma-d0-MCW" firstAttribute="height" secondItem="dvy-q0-Pwg" secondAttribute="height" id="LMe-Wr-dJq"/>
+                <constraint firstAttribute="bottom" secondItem="2bH-My-PbN" secondAttribute="bottom" id="PSF-BL-a5G"/>
+                <constraint firstItem="H0W-Zq-5w2" firstAttribute="leading" secondItem="Oma-d0-MCW" secondAttribute="trailing" constant="33" id="YBV-yM-UfV"/>
+                <constraint firstItem="ULR-ni-gA5" firstAttribute="leading" secondItem="aUd-yr-XkS" secondAttribute="trailing" constant="50" id="YwF-sN-YrO"/>
+                <constraint firstItem="XNT-K0-im9" firstAttribute="leading" secondItem="ULR-ni-gA5" secondAttribute="leading" id="ZHY-h4-wXq"/>
+                <constraint firstItem="dvy-q0-Pwg" firstAttribute="height" secondItem="Omk-GJ-CxP" secondAttribute="height" id="bXp-rA-yoZ"/>
+                <constraint firstItem="9aW-NC-op7" firstAttribute="centerY" secondItem="ULR-ni-gA5" secondAttribute="centerY" id="g0V-35-2AO"/>
+                <constraint firstItem="2bH-My-PbN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="h40-vP-pag"/>
+                <constraint firstItem="Omk-GJ-CxP" firstAttribute="top" secondItem="XNT-K0-im9" secondAttribute="bottom" constant="50" id="jBB-xs-iQj"/>
+                <constraint firstAttribute="trailing" secondItem="2bH-My-PbN" secondAttribute="trailing" id="jkf-rh-N3N"/>
+                <constraint firstItem="9aW-NC-op7" firstAttribute="leading" secondItem="ULR-ni-gA5" secondAttribute="trailing" constant="50" id="lxi-as-lSQ"/>
+                <constraint firstItem="dvy-q0-Pwg" firstAttribute="leading" secondItem="Omk-GJ-CxP" secondAttribute="trailing" constant="33" id="m1b-yX-Np5"/>
+                <constraint firstItem="dvy-q0-Pwg" firstAttribute="centerY" secondItem="Omk-GJ-CxP" secondAttribute="centerY" id="mwB-oT-bLg"/>
+                <constraint firstItem="2bH-My-PbN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pGs-1d-aZw"/>
+                <constraint firstItem="Oma-d0-MCW" firstAttribute="leading" secondItem="dvy-q0-Pwg" secondAttribute="trailing" constant="33" id="shm-Qe-fqb"/>
+                <constraint firstAttribute="trailing" secondItem="XNT-K0-im9" secondAttribute="trailing" id="tai-aY-Q8n"/>
+                <constraint firstItem="Omk-GJ-CxP" firstAttribute="centerX" secondItem="2bH-My-PbN" secondAttribute="centerX" constant="-20" id="ugW-XO-s7e"/>
+                <constraint firstItem="H0W-Zq-5w2" firstAttribute="height" secondItem="Oma-d0-MCW" secondAttribute="height" id="xWZ-VI-UyQ"/>
+                <constraint firstItem="H0W-Zq-5w2" firstAttribute="width" secondItem="Oma-d0-MCW" secondAttribute="width" id="zmv-hb-rK1"/>
+            </constraints>
+            <point key="canvasLocation" x="353" y="359"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bofangicon" width="60" height="60"/>
+        <image name="fenxiangicon" width="27" height="27"/>
+        <image name="shangyishouicon" width="35" height="35"/>
+        <image name="xiayishouicon" width="35" height="35"/>
+        <image name="xiazaiicon" width="27" height="27"/>
+        <image name="xihuanicon" width="27" height="27"/>
+        <image name="yinyuelibiaoicon" width="27" height="27"/>
+        <image name="zhuanshuyinyuebg" width="375" height="618"/>
+    </resources>
+</document>
